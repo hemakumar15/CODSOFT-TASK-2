@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { text-align: center; background: #f4f4f4; }
+        .container { width: 80%; margin: auto; }
+        .hero { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 60px 0; }
+        .hero h1 { font-size: 3.5em; animation: fadeIn 1.5s ease-in-out; }
+        .hero p { font-size: 1.3em; margin-top: 10px; }
+        .btn { background: white; color: #007bff; padding: 12px 25px; text-decoration: none; display: inline-block; margin-top: 15px; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #0056b3; color: white; }
+        .features { display: flex; justify-content: space-around; margin: 60px 0; flex-wrap: wrap; }
+        .feature { background: white; padding: 25px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); border-radius: 10px; width: 30%; text-align: center; transition: 0.3s; }
+        .feature:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+        .footer { background: #333; color: white; padding: 25px 0; margin-top: 40px; font-size: 0.9em; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .features { flex-direction: column; align-items: center; }
+            .feature { width: 80%; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Your success starts here</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <p>High-quality service</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <p>24/7 Support</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <p>Easy to use</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </div>
+</body>
+</html>
